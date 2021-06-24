@@ -1,0 +1,66 @@
+.weekly {
+	border: 1px dashed grey;
+	background: $color-white;
+	margin: auto;
+	margin-top: 250px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 95%;
+	height: 45vh;
+	// overflow: scroll;
+	&__info {
+		margin-top: 20px;
+		//   height: 506px;
+		align-items: center;
+		width: 806px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		color: $color-orange;
+		font-size: 1.4rem;
+		border-bottom: 2px solid $color-light-grey_2;
+		margin-top: 10px;
+	}
+	&__arrow {
+		width: 1000px;
+		display: flex;
+		justify-content: space-between;
+
+		.fas {
+			font-size: 14px;
+		}
+
+		.arrow-btn {
+			color: $color-orange;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: none;
+			background: none;
+
+			.fa-angle-double-right:before {
+				margin-left: 15px;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	thead {
+		color: $color-grey;
+		font-size: 1.2rem;
+		border-bottom: 2px solid $color-light-grey_2;
+		margin: 5px auto;
+	}
+	td {
+		color: $color-grey;
+		border-bottom: 2px solid $color-light-grey_2;
+		font-size: 1rem;
+		padding: 5px 15px;
+	}
+}

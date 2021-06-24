@@ -1,0 +1,40 @@
+.plan-buttons {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 40%;
+  left: 239px;
+}
+.plan-buttons__add {
+  display: flex;
+  background-color: $color-white;
+  border: 2px dashed $color-green;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 10px;
+  width: 250px;
+  height: 220px;
+  position: relative;
+}
+
+.plan-buttons__addbtn {
+  width: 120px;
+  height: 120px;
+  color: $color-green;
+  font-size: 100px;
+  border-color: $color-green;
+  border-radius: 20px;
+  border: 5px solid $color-green;
+  cursor: pointer;
+}
+.plan-buttons__text {
+  $font-open-sans: "Open Sans", sans-serif;
+  color: $color-green;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,42 @@
+.about__me {
+  background-color: $color-light-grey_2;
+  display: flex;
+  justify-content: center;
+  .container {
+    width: $container-width;
+    height: 622px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .about__me-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 330px;
+      margin: 50px;
+      .about__me-image i{
+        font-size: 75px;
+        color: $color-light-grey;
+      }
+      .about__me-title {
+        margin-top: 25px;
+        font-size: 32px;
+        text-align: center;
+        color: $color-grey;
+        font-family: $font-open-sans;
+        font-weight: 400;
+        margin-bottom: 20px;
+        line-height: 32px;
+      }
+      .about__me-text {
+        font-size: 24px;
+        text-align: center;
+        color: $color-grey;
+        font-family: $font-open-sans;
+        font-weight: lighter;
+        line-height: 32px;
+      }
+    }
+  }
+}

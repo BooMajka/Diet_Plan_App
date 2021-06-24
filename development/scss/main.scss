@@ -1,0 +1,47 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+//reset
+@import "generic/reset.scss";
+
+//elementy
+@import "setting/colors.scss";
+@import "setting/fonts.scss";
+@import "setting/images.scss";
+@import "setting/sizes.scss";
+
+//elementy z fontawesome (nie wiem czy dokladnie tego potrzeba)
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/solid.scss";
+@import "fontawesome/brands.scss";
+@import "fontawesome/regular.scss";
+
+//elementy głowne SCSS
+@import "elements/header.scss";
+@import "elements/cta-section.scss";
+@import "elements/about_me.scss";
+@import "elements/contact_box";
+@import "elements/carousel.scss";
+@import "elements/author-info.scss";
+@import "elements/application.scss";
+@import "elements/news.scss";
+@import "elements/plan-section.scss";
+@import "elements/widgets-info.scss";
+@import "elements/modal-recipes";
+@import "elements/buttons-widget";
+@import "elements/weekly_plan.scss";
+@import "elements/modal-plan";
+@import "elements/recipes.scss";
+@import "elements/schedules.scss";
+
+
+root {
+	font-size: $font-base-size;
+}
+
+body {
+	background-color: $color-body-background;
+}

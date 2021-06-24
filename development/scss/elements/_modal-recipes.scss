@@ -1,0 +1,205 @@
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 5px;
+  margin: 20px auto 5px auto;
+  background-color: #eceee0;
+  color: white;
+  border-bottom: 2px solid $color-light-grey;
+  h2 {
+    font-size: 24px;
+    font-family: $font-open-sans;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $color-orange;
+  }
+  .close {
+    padding: 5px 10px;
+    font-family: $font-open-sans;
+    font-size: 16px;
+    background-color: $color-orange;
+    color: #ffffff;
+  }
+}
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+  .recipe__description {
+    margin: 15px 80px 15px 80px;
+    form {
+      display: flex;
+      flex-direction: column;
+      .recipe__name-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        label {
+          font-size: 23px;
+          color: $color-grey;
+          font-family: $font-open-sans;
+          margin-right: 10px;
+        }
+        input {
+          font-family: $font-open-sans;
+          width: 70%;
+          height: 40px;
+          color: $color-grey;
+          border: 2px solid $color-light-grey;
+          padding: 5px;
+        }
+      }
+      .recipe__desc-container {
+        display: flex;
+        justify-content: space-between;
+        label {
+          color: $color-grey;
+          font-size: 23px;
+          font-family: $font-open-sans;
+        }
+        textarea {
+          color: $color-grey;
+          font-family: $font-open-sans;
+          resize: initial;
+          width: 70%;
+          height: 100px;
+          border: 2px solid $color-light-grey;
+          padding: 5px;
+        }
+      }
+      .recipe__add-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        .fa-plus-square {
+          margin-left: 5px;
+          font-size: 26px;
+          color: $color-green;
+        }
+        h2 {
+          color: $color-grey;
+          font-size: 23px;
+          font-family: $font-open-sans;
+          font-weight: 400;
+          border-bottom: 2px solid $color-light-grey;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        .recipe__instr-container {
+          width: 50%;
+          margin-right: 30px;
+          .recipe__instr-area {
+            display: flex;
+            textarea {
+              width: 85%;
+              height: 100px;
+              resize: initial;
+              color: $color-grey;
+              font-family: $font-open-sans;
+              border: 2px solid $color-light-grey;
+              padding: 5px;
+            }
+          }
+        }
+        .recipe__ingr-container {
+          width: 50%;
+          .recipe__ingr-area input{
+            width: 85%;
+            height: 30px;
+            color: $color-grey;
+            font-family: $font-open-sans;
+            border: 2px solid $color-light-grey;
+            padding: 5px;
+          }
+        }
+      }
+      .recipe__result-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .recipe__result-instr {
+          width: 50%;
+          margin-right: 30px;
+          .instr-list {
+            list-style-type: decimal;
+            height: 200px;
+            overflow-y: scroll;
+            padding-top: 15px;
+            padding-left: 20px;
+            li {
+              font-family: $font-open-sans;
+              font-size: 16px;
+              color: $color-grey;
+              margin-bottom: 5px;
+              a {
+                text-decoration: none;
+                .fa-edit {
+                  color: $color-orange;
+                }
+                .fa-trash-alt {
+                  color: $color-red;
+                }
+              }
+            }
+          }
+        }
+        .recipe__result-ingr {
+          width: 50%;
+          .instr-list {
+            list-style-type: disc;
+            height: 200px;
+            overflow-y: scroll;
+            padding-left: 20px;
+            padding-top: 15px;
+            li {
+              font-family: $font-open-sans;
+              font-size: 16px;
+              color: $color-grey;
+              margin-bottom: 5px;
+              a {
+                text-decoration: none;
+                .fa-edit {
+                  color: $color-orange;
+                }
+                .fa-trash-alt {
+                  color: $color-red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Modal Content */
+.modal-content {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  top: 140px;
+  left: 240px;
+  background-color: #eceee0;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}

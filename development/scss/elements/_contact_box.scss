@@ -1,0 +1,74 @@
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey;
+}
+.contact-box__div{
+    width: 25%;
+    height: 30vh;
+    margin: 20px;
+    padding: 30px;
+    text-align: left;
+}
+.contact-box__h2{
+    color: $color-white;
+    font-size: 30px;
+}
+.contact-box__text {
+    color: $color-white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.contact-box__ul{
+    color: $color-white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.contact-box__li{
+    margin-top: 3px;
+    list-style-type: disc;
+    list-style-position: inside;
+
+}
+.contact-text{
+    margin-top: 20px;
+    border: none;
+    height: 30px;
+    padding: 3px;
+}
+.contact-box__btn{
+    background-color: $color-orange;
+    color: $color-white;
+    height: 30px;
+    margin: -5px;
+    cursor: pointer;
+    border: none;
+    &:hover {
+        text-decoration: none;
+        color: $color-orange;
+        background-color: $color-white;
+    }
+}
+
+.fab {
+    margin-top: 20px;
+    color: $color-white;
+    margin-right: 30px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+.contact-copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-dark-grey;
+    height: 8vh;
+}
+.contact-copy__copyright{
+    color: $color-white;
+    margin-right: 3px;
+}
+.contact-copy__name{
+    color: $color-orange;
+}

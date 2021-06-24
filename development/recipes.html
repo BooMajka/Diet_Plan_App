@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+  <div class="page">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="/">
+            <h1>
+              <span id="first">Zaplanuj</span>
+              <span id="second">Jedzonko</span>
+            </h1>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <div class="header__user-name">
+            Imię
+          </div>
+          <div class="header__user-icon">
+            <a href=""><i class="fas fa-user-circle"></i></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--- WIADOMOSC -->
+  <main class="main-content">
+    
+  <section class="menu__main">
+      <div class="main__left-panel">
+        <ul class="main__list">
+          <li class="main__list-text"><a href="/app.html">Pulpit</a></li>
+          <li class="main__list-text"><a href="/recipes.html">Przepisy</a></li>
+          <li class="main__list-text"><a href="/schedules.html">Plany</a></li>
+        </ul>
+      </div>
+      <!-- <div class="main__panel"> </div> -->
+    </section>
+    <section class="recipes">
+    <div class="recipes__main">
+        <div class="recipes__title">Lista przepisów<i class="fas fa-plus-square"></i></div>
+        <div class="recipes__info">
+        <table class="recipes__table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nazwa</th>
+                    <th>opis</th>
+                    <th>akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+              <!-- recipes z local storage ida tutaj -->
+            </tbody>
+        </table>
+      </div>
+
+    </div>
+</section>
+     
+  </main>
+    <script src="./js/recipes.js"></script>
+  </body>
+</html>

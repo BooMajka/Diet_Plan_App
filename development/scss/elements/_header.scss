@@ -1,0 +1,46 @@
+
+.header-main {
+  background-color: $color-dark-grey;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+    flex: 2;
+    max-width: 850px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: $color-white;
+      transition: all 0.2s;
+      text-transform: uppercase;
+
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color: $color-orange;
+      }
+    }
+  }
+
+  &__logo {
+    flex: 1;
+    font-size: 3rem;
+    font-family: $font-charmonman;
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    span {
+      color: $color-orange;
+    }
+  }
+}
